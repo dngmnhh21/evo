@@ -1,0 +1,60 @@
+header{
+    .header_top{
+        background-color: $color-orange-0;
+        
+        .top_left{
+            p{
+                @include styleText($color-white-0, $fs-0, $fw-1);
+                margin-bottom: $mg-0 + 5; 
+                margin-top: $mg-0 + 5;
+            }
+            
+            
+        }
+        .top_right{
+            ul{
+                margin-bottom: 0;
+                li{
+                    display: inline-block;
+                    a{
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        @include styleText($color-white-1, $fs-0, $fw-1);
+                        margin: $mg-0 0;
+                        transition: .5s;
+                        
+                    }
+                    // &:hover{
+                    //     color: $color-black-1;
+                    // }
+                    
+                }
+            }
+
+        }
+    }
+    .header_bottom{
+        align-items: center;
+        margin: $mg-0 + 5 0;
+        .logo{
+            text-align: center;
+
+        }
+        .search{
+            .form-search{
+                box-shadow: none;
+
+            }
+
+        }
+        .tt{
+            display: flex;
+            .hotline{
+                a{
+                    text-decoration: none;
+                    @include styleText();
+                }
+            }
+        }
+    }
+}

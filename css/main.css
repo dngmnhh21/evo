@@ -1,0 +1,39 @@
+header .header_top {
+  background-color: #f68e2e;
+}
+header .header_top .top_left p {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+header .header_top .top_right ul {
+  margin-bottom: 0;
+}
+header .header_top .top_right ul li {
+  display: inline-block;
+}
+header .header_top .top_right ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 5px 0;
+  transition: 0.5s;
+}
+header .header_bottom {
+  align-items: center;
+  margin: 10px 0;
+}
+header .header_bottom .logo {
+  text-align: center;
+}
+header .header_bottom .tt {
+  display: flex;
+}
+header .header_bottom .tt .hotline a {
+  text-decoration: none;
+  @inc;
+}/*# sourceMappingURL=main.css.map */
