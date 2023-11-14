@@ -32,72 +32,77 @@
 <body>
     <!-- Header  -->
     <header>
-        <div class="header_top ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6 top_left">
-                        <p>SIÊU THỊ NỘI THẤT & TRANG TRÍ EVO NỘI THẤT</p>
-                    </div>
-                    <div class="col-6 text-end top_right">
-                        <ul>
-                            <li>
-                                <a href="#"><i class="fa fa-sign-in-alt login"></i> Đăng nhập</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-user-plus logout"></i> Đăng ký</a>
-                            </li>
-                        </ul>
-    
+        <div class="input-search-mobile" id="searchMobile">
+            <input type="text" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-x" onclick="onclickClose()"></i>
+        </div>
+        <div class="header">
+            <div class="header_top ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6  top_left">
+                            <p>SIÊU THỊ NỘI THẤT & TRANG TRÍ EVO NỘI THẤT</p>
+                        </div>
+                        <div class=" col-lg-6 text-end top_right ">
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fa fa-sign-in-alt login"></i> Đăng nhập</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-user-plus logout"></i> Đăng ký</a>
+                                </li>
+                            </ul>
+
+                        </div>
                     </div>
                 </div>
             </div>
-           
 
-        </div>
-        <div class="header_bottom ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-3 logo">
-                        <a href="#">
-                            <img style="width: 219px; height: 65px;" src="./img/logo_evo.webp" alt="logo">
-                        </a>
+            <div class="header_bottom ">
+                <div class="container">
+                    <div class="content">
                         
-                    </div>
-                    <div class="col-5 search">
-                        <form class="form-search">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Bạn muốn tìm gì?">
-                                <div class="input-group-append">
-                                    <span class="input-group-text" id="basic-addon2">
-                                        <i class="fa fa-search"></i></span>
+                        <div class="row">
+                            <div class="col-md-1 d-lg-none menu-mobile">
+                            <i class="fa-solid fa-bars"></i>
+                            
+                        </div>
+                            <div class="col-md-8 col-lg-3 logo">
+                                <img style="width: 219px; height: 65px;" src="./img/logo_evo.webp" alt="logo">
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="content-search">
+                                    <input type="text" />
+                                    <i class="fa-solid fa-magnifying-glass"></i>
                                 </div>
                             </div>
-                        </form>
-                    </div>
-                    <div class="col-4 tt">
-                         <div class="hotline">
-                            <a href="tel:0123456789">
-                                <span>LIÊN HỆ HOTLINE</span>
-                                <span>0123456789</span>
-                            </a>
-                         </div>
-                         <div class="hotline">
-                            <a href="#">
-                                <span>TÌM ĐỊA CHỈ</span>
-                                <span>CỬA HÀNG</span>
-                            </a>
-                         </div>
-                         <div class="cart">
-                            <i class="fa fa-shopping-cart"></i>
-                         </div>
+                            <div class="col-md-3 col-lg-4">
+                                <div class="content-contact ">
+                                    <div class="hotline">
+                                        <p>LIÊN HỆ HOTLINE</p>
+                                        <a href="tel:0123456789">0123 456 789</a>
+                                    </div>
+                                    <div class="address">
+                                        <p>TÌM ĐỊA CHỈ</p>
+                                        <a href="#">CỬA HÀNG</a>
+                                    </div>
+                                    <div class="search-mobile" onclick="onclickA()">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                    <div class="cart">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-
         </div>
     </header>
 
+    
 
 
 
@@ -113,9 +118,19 @@
 
     <!-- owl js  -->
     <script src="./js/owl.carousel.min.js"></script>
-    
+
     <!-- main js  -->
-    <script src="./js/main.js"></script>
+    <script>
+        function onclickA() {
+            const searchMobile = document.getElementById("searchMobile");
+            searchMobile.style.display = "flex";
+            searchMobile.style.zIndex = "1";
+        }
+        function onclickClose() {
+            const searchMobile = document.getElementById("searchMobile");
+            searchMobile.style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
