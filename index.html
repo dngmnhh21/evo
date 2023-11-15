@@ -1,136 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Evo Nội Thất</title>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- Font GG  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- owl carousel  -->
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
 
     <!-- BS5 css  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
 
     <!-- Main css  -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- Header  -->
     <header>
-        <div class="input-search-mobile" id="searchMobile">
-            <input type="text" />
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-x" onclick="onclickClose()"></i>
-        </div>
-        <div class="header">
-            <div class="header_top ">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-6  top_left">
-                            <p>SIÊU THỊ NỘI THẤT & TRANG TRÍ EVO NỘI THẤT</p>
-                        </div>
-                        <div class=" col-lg-6 text-end top_right ">
-                            <ul>
-                                <li>
-                                    <a href="#"><i class="fa fa-sign-in-alt login"></i> Đăng nhập</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-user-plus logout"></i> Đăng ký</a>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
+      <div class="input-search-mobile" id="searchMobile">
+        <input type="text" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-x" onclick="onclickClose()"></i>
+      </div>
+      <div class="header">
+        <div class="header_top">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-lg-6 top_left">
+                <p>SIÊU THỊ NỘI THẤT & TRANG TRÍ EVO NỘI THẤT</p>
+              </div>
+              <div class="col-lg-6 text-end top_right">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-sign-in-alt login"></i> Đăng nhập</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-user-plus logout"></i> Đăng ký</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-
-            <div class="header_bottom ">
-                <div class="container">
-                    <div class="content">
-                        
-                        <div class="row">
-                            <div class="col-md-1 d-lg-none menu-mobile">
-                            <i class="fa-solid fa-bars"></i>
-                            
-                        </div>
-                            <div class="col-md-8 col-lg-3 logo">
-                                <img style="width: 219px; height: 65px;" src="./img/logo_evo.webp" alt="logo">
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="content-search">
-                                    <input type="text" />
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-lg-4">
-                                <div class="content-contact ">
-                                    <div class="hotline">
-                                        <p>LIÊN HỆ HOTLINE</p>
-                                        <a href="tel:0123456789">0123 456 789</a>
-                                    </div>
-                                    <div class="address">
-                                        <p>TÌM ĐỊA CHỈ</p>
-                                        <a href="#">CỬA HÀNG</a>
-                                    </div>
-                                    <div class="search-mobile" onclick="onclickA()">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                    </div>
-                                    <div class="cart">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="header_bottom">
+          <div class="container">
+            <div class="content">
+              <div class="row align-items-center">
+                <div class="col-md-1 col-1 d-lg-none menu-mobile">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="col-9 col-md-8 col-lg-3 logo">
+                  <img
+                    style="width: 219px; height: 65px"
+                    src="./img/logo_evo.webp"
+                    alt="logo"
+                  />
+                </div>
+                <div class="content-search d-md-none d-lg-flex">
+                  <input type="text" style="outline: none" />
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="content-contact align-items-center col-md-3 col-lg-4 col-2">
+                  <div class="hotline">
+                    <p>LIÊN HỆ HOTLINE</p>
+                    <a href="tel:0123456789">0123 456 789</a>
+                  </div>
+                  <div class="address">
+                    <p>TÌM ĐỊA CHỈ</p>
+                    <a href="#">CỬA HÀNG</a>
+                  </div>
+                  <div class="search-mobile" onclick="onclickA()">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+                  <div class="cart ">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-nav">
+        <div class="nav-content container">
+          <div class="row">
+              <div class="main-menu px-0 col-3">
+                <span class="align-items-center">Tất cả sản phẩm</span>
+            </div>
+            <div class="navbar-main col-9 px-0">
+              <nav class="navbar navbar-expand-lg d-md-none d-lg-block navbar-light bg-light">
+                <div class="container-fluid">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">TRANG CHỦ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">GIỚI THIỆU</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          SẢN PHẨM
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">BLOG</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">LIÊN HỆ</a>
+                      </li>
+                      
+                    </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+          
+ 
+        </div>
+      </div>
     </header>
-
-    
-
-
 
 
     <!-- JS BS5  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- owl js  -->
     <script src="./js/owl.carousel.min.js"></script>
 
     <!-- main js  -->
     <script>
-        function onclickA() {
-            const searchMobile = document.getElementById("searchMobile");
-            searchMobile.style.display = "flex";
-            searchMobile.style.zIndex = "1";
-        }
-        function onclickClose() {
-            const searchMobile = document.getElementById("searchMobile");
-            searchMobile.style.display = "none";
-        }
+      function onclickA() {
+        const searchMobile = document.getElementById("searchMobile");
+        searchMobile.style.display = "flex";
+        searchMobile.style.zIndex = "1";
+      }
+      function onclickClose() {
+        const searchMobile = document.getElementById("searchMobile");
+        searchMobile.style.display = "none";
+      }
     </script>
-</body>
-
+  </body>
 </html>

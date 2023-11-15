@@ -44,11 +44,14 @@ header .header_bottom {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 header .header_bottom .content .logo {
   text-align: center;
 }
 header .header_bottom .content .content-search {
+  height: 40px;
+  margin-top: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,25 +59,45 @@ header .header_bottom .content .content-search {
   padding: 10px;
   border-radius: 5px;
 }
+@media screen and (min-width: 991px) {
+  header .header_bottom .content .content-search {
+    width: 372px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header .header_bottom .content .content-search {
+    width: 454px;
+  }
+}
 header .header_bottom .content .content-search input {
-  width: 100%;
+  width: 190%;
   border: none;
 }
 header .header_bottom .content .content-contact {
   display: flex;
-  align-items: end;
+  text-align: right;
 }
-header .header_bottom .content .content-contact .address, header .header_bottom .content .content-contact .hotline {
+header .header_bottom .content .content-contact .address,
+header .header_bottom .content .content-contact .hotline {
   padding-left: 20px;
   text-align: center;
   cursor: pointer;
 }
-header .header_bottom .content .content-contact .address a, header .header_bottom .content .content-contact .hotline a {
+header .header_bottom .content .content-contact .address p,
+header .header_bottom .content .content-contact .hotline p {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+header .header_bottom .content .content-contact .address a,
+header .header_bottom .content .content-contact .hotline a {
   text-decoration: none;
+  font-size: 14px;
   font-weight: 600;
   color: #ff0000;
 }
-header .header_bottom .content .content-contact .address a:hover, header .header_bottom .content .content-contact .hotline a:hover {
+header .header_bottom .content .content-contact .address a:hover,
+header .header_bottom .content .content-contact .hotline a:hover {
   color: #f68e2e;
 }
 header .header_bottom .content .content-contact .cart {
@@ -93,6 +116,9 @@ header .header_bottom .content .content-contact .search-mobile {
   header .header_top .top_right {
     display: none;
   }
+  header .header_bottom .content .logo {
+    text-align: center;
+  }
   header .header_bottom .content .content-search {
     display: none;
   }
@@ -105,4 +131,10 @@ header .header_bottom .content .content-contact .search-mobile {
   header .header_bottom .content .content-contact .search-mobile {
     display: block;
   }
+}
+header .main-nav .nav-content .main-menu {
+  background-color: #f68e2e;
+}
+header .main-nav .nav-content .navbar-main {
+  justify-content: space-around;
 }/*# sourceMappingURL=main.css.map */
